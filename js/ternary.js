@@ -45,3 +45,12 @@ function getSentence(userObj) {
 }
 getSentence(user1);
 getSentence(user2);
+
+// jei amziu yra daugiau maziau 18 - vaikas
+// jei amziu yra daugiau maziau 55 - sugauges
+// jei amziu yra daugiau maziau 180 - isgyvenes
+let age = 12;
+// nested ternary operator (taip nedaryti bent pirmus metus)
+let rezultAge = age < 18 ? 'vaikas' : age < 55 ? 'suauges' : 'isgyvenes';
+
+console.log('rezultAge ===', rezultAge);

@@ -74,5 +74,5 @@ function yesOrNo2() {
   console.log('rezult ===', rezult);
   return rezult;
 }
-let r = yesOrNo2();
-console.log('r ===', r);
+let rez = yesOrNo2();
+console.log('rez ===', rez);

@@ -59,18 +59,20 @@ function yesOrNo2() {
   // mixedArray.filter((el) => el === true);
   // sukti cikla
   mixedArray.forEach((el) => {
-    // taip tada ziureti ar true
-    if (el === true) {
-      // taip tai dedam prie obj.taip
-      rezult.taip++;
-    } else {
-      // ne dedam prie obj.ne
-      rezult.ne++;
+    if (typeof el === 'boolean') {
+      // taip tada ziureti ar true
+      if (el === true) {
+        // taip tai dedam prie obj.taip
+        rezult.taip++;
+      } else {
+        // ne dedam prie obj.ne
+        rezult.ne++;
+      }
     }
   });
 
   console.log('rezult ===', rezult);
   return rezult;
 }
-let r = yesOrNo();
+let r = yesOrNo2();
 console.log('r ===', r);
